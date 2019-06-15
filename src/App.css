@@ -31,3 +31,68 @@
     transform: rotate(360deg);
   }
 }
+
+.box-container{
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 7rem);
+  grid-gap: 1.5rem;
+  margin: 2rem 0;
+}
+.box{
+  background: rgb(191, 141, 255);
+  font-weight: bolder;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .3s all;
+  font-size: 1.5rem;
+  font-family: 'Varela Round', sans-serif;
+  box-shadow: 0 .4rem .8rem rgba(185, 185, 185, 0.3);
+}
+.box:hover{
+  background: rgb(179, 120, 255);
+  box-shadow: 0 .4rem .8rem rgba(224, 224, 224, 0.185);
+}
+
+.title{
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.title span:first-child{
+  color: #ff89cd;
+  margin:0 .3rem;
+}
+.title span:nth-child(2){
+  color: #89ebff;
+  margin:0 .3rem;
+}
+.title span:last-child{
+  color: rgb(191, 141, 255);
+  margin:0 .3rem;
+}
+
+
+
+.game-stats{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 2rem;
+}
+h2{
+  color: rgb(209, 207, 207);
+}
+.game-stats li{
+  margin: 0 1rem;
+}
